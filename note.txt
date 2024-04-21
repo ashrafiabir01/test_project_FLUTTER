@@ -1,0 +1,28 @@
+1. import
+2. class create (type: st) 
+3. class name change and dlt key line (page1,page2....)
+4. change placeholder to Scaffold (type:sc)
+5. create app bar
+6. create main class type main
+
+
+
+
+
+
+note: scaffold used for body, appbar, nevigation. always dlt const from file. 
+
+
+
+
+
+void main(List<String> args) {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Page(),
+  ));
+}
+
+
+left side icon leading
+right side icon action
