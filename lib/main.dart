@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -26,12 +26,59 @@ class Page extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Text(
-              "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc"),
-          Text(""),
-          Text("nais"),
-          Image.asset("img/flag.png"),
-          Text("adasdas")
+          Padding(
+            padding: EdgeInsets.only(top: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        fixedSize: Size(100, 50),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(1))),
+                        backgroundColor: Colors.blue),
+                    onPressed: () {},
+                    child: Text(
+                      "Home",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        fixedSize: Size(100, 50),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(1))),
+                        backgroundColor: Colors.blue),
+                    onPressed: () {},
+                    child: Text(
+                      "Login",
+                      style: TextStyle(color: Colors.white),
+                    )),
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        fixedSize: Size(100, 50),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(1))),
+                        backgroundColor: Colors.blue),
+                    onPressed: () {},
+                    child: Text(
+                      "Register",
+                      style: TextStyle(color: Colors.white, fontSize: 12),
+                    ))
+              ],
+            ),
+          ),
+          Container(
+            height: 100,
+            child: Text("Hi this is abir"),
+          ),
+          Container(
+            color: Colors.red,
+            height: 500,
+            child: Align(
+                alignment: Alignment.centerRight,
+                child: Text("Hi this is mahin")),
+          ),
+          Text("this is 3")
         ],
       ),
     );
